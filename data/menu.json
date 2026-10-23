@@ -1,0 +1,123 @@
+{
+  "settings": {
+    "whatsappNumber": "201154948726",
+    "whatsappDisplay": "0115 494 8726",
+    "orderPrefix": "BK",
+    "minimumOrder": 0,
+    "pickup": true,
+    "deliveryAreas": [],
+    "payments": ["cash", "instapay", "vodafone"],
+    "timeSlots": ["morning", "afternoon", "evening"],
+    "instagram": "",
+    "tiktok": ""
+  },
+  "categories": [
+    { "id": "cookies", "name": { "en": "Cookies", "ar": "كوكيز" } },
+    { "id": "boxes", "name": { "en": "Boxes", "ar": "بوكسات" } },
+    { "id": "brownies", "name": { "en": "Brownies", "ar": "براونيز" } },
+    { "id": "seasonal", "name": { "en": "Seasonal", "ar": "موسمي" } }
+  ],
+  "products": [
+    {
+      "id": "cookie",
+      "category": "cookies",
+      "available": true,
+      "inStockToday": false,
+      "badge": "best",
+      "image": "assets/img/cookie.webp",
+      "name": { "en": "Chocolate Chip Cookie", "ar": "كوكيز شوكولاتة تشيبس" },
+      "description": {
+        "en": "Soft and chewy, loaded with chocolate. Choose white, milk or dark.",
+        "ar": "طرية ومليانة شوكولاتة. اختار وايت أو ميلك أو دارك."
+      },
+      "chocolate": ["white", "milk", "dark"],
+      "sizes": [
+        { "grams": 45, "price": 55 },
+        { "grams": 65, "price": 65 },
+        { "grams": 80, "price": 75 }
+      ],
+      "boxVersion": "cookie-box"
+    },
+    {
+      "id": "caramel-cookie",
+      "category": "cookies",
+      "available": true,
+      "inStockToday": false,
+      "image": "assets/img/caramel-cookie.webp",
+      "name": { "en": "Salted Caramel Cookie", "ar": "كوكيز كراميل مملّح" },
+      "description": {
+        "en": "Stuffed with salted caramel and topped with sea salt flakes.",
+        "ar": "محشية كراميل مملّح ومرشوش عليها ملح بحري."
+      },
+      "price": null
+    },
+    {
+      "id": "cookie-box",
+      "category": "boxes",
+      "available": true,
+      "inStockToday": false,
+      "badge": "save",
+      "image": "assets/img/cookie-box.webp",
+      "name": { "en": "Cookie Box", "ar": "بوكس كوكيز" },
+      "description": {
+        "en": "The same cookies at a better price: every cookie in a box costs 5 EGP less.",
+        "ar": "نفس الكوكيز بسعر أحسن: كل كوكي في البوكس أرخص 5 ج.م."
+      },
+      "chocolate": ["white", "milk", "dark"],
+      "sizes": [{ "grams": 45 }, { "grams": 65 }, { "grams": 80 }],
+      "pieces": [
+        { "count": 4, "prices": { "45": 200, "65": 240, "80": 280 } },
+        { "count": 6, "prices": { "45": 300, "65": 360, "80": 420 } },
+        { "count": 12, "prices": { "45": 600, "65": 720, "80": 840 } }
+      ],
+      "singleVersion": "cookie"
+    },
+    {
+      "id": "brownie-box",
+      "category": "boxes",
+      "available": true,
+      "inStockToday": false,
+      "image": "assets/img/brownie-box.webp",
+      "name": { "en": "Brownie Box", "ar": "بوكس براونيز" },
+      "description": {
+        "en": "Fudgy brownies boxed for sharing. Save up to 60 EGP.",
+        "ar": "براونيز في بوكس للعزومات. وفّر لحد 60 ج.م."
+      },
+      "pieces": [
+        { "count": 4, "price": 190 },
+        { "count": 6, "price": 280 },
+        { "count": 12, "price": 540 }
+      ],
+      "singleVersion": "brownie"
+    },
+    {
+      "id": "brownie",
+      "category": "brownies",
+      "available": true,
+      "inStockToday": false,
+      "image": "assets/img/brownie.webp",
+      "name": { "en": "Chocolate Brownie", "ar": "براوني شوكولاتة" },
+      "description": {
+        "en": "Fudgy chocolate brownie with a crackly top.",
+        "ar": "براوني شوكولاتة طرية ووشها مقرمش."
+      },
+      "price": 50,
+      "boxVersion": "brownie-box"
+    },
+    {
+      "id": "halloween-treats",
+      "category": "seasonal",
+      "available": true,
+      "availableUntil": "2026-10-31",
+      "inStockToday": false,
+      "badge": "season",
+      "image": "assets/img/halloween-treats.webp",
+      "name": { "en": "Halloween Ghost Treats", "ar": "حلويات أشباح الهالوين" },
+      "description": {
+        "en": "Cookies and brownies topped with marshmallow ghosts. For Halloween only.",
+        "ar": "كوكيز وبراونيز عليها أشباح مارشميلو. في الهالوين بس."
+      },
+      "price": null
+    }
+  ]
+}

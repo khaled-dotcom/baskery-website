@@ -1,0 +1,181 @@
+<!doctype html>
+<html lang="en" dir="ltr">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+  <title>Baskery · Fresh cookies &amp; brownies, order on WhatsApp</title>
+  <meta name="description" content="Fresh chocolate chip cookies and brownies from Baskery, baked for your order. Choose your size and chocolate, then send your order on WhatsApp.">
+  <meta name="theme-color" content="#ADC6E5">
+  <link rel="icon" href="/favicon.ico" sizes="any">
+  <link rel="icon" href="/assets/img/favicon.png" type="image/png">
+  <link rel="apple-touch-icon" href="/assets/img/apple-touch-icon.png">
+  <link rel="manifest" href="/site.webmanifest">
+
+  <meta property="og:type" content="website">
+  <meta property="og:site_name" content="Baskery">
+  <meta property="og:title" content="Baskery · Baked to make you smile">
+  <meta property="og:description" content="Fresh cookies and brownies, baked for your order. Order on WhatsApp.">
+  <meta property="og:image" content="/assets/img/og.jpg">
+  <meta property="og:image:width" content="1200">
+  <meta property="og:image:height" content="630">
+  <meta name="twitter:card" content="summary_large_image">
+
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Baloo+Bhaijaan+2:wght@500;600;700&family=Fredoka:wght@500;600&family=Nunito:wght@400;600;700;800&family=Tajawal:wght@400;500;700;800&display=swap">
+  <link rel="stylesheet" href="/assets/css/style.css">
+
+  <script type="application/ld+json">
+  {
+    "@context": "https://schema.org",
+    "@type": "Bakery",
+    "name": "Baskery",
+    "slogan": "Baked to make you smile",
+    "telephone": "+201154948726",
+    "image": "/assets/img/og.jpg",
+    "priceRange": "EGP 50–840",
+    "address": { "@type": "PostalAddress", "addressCountry": "EG" }
+  }
+  </script>
+</head>
+<body>
+  <a class="skip" href="#menu" data-i18n="skip">Skip to the menu</a>
+
+  <header class="site-head">
+    <div class="wrap head-in">
+      <a class="head-logo" href="#top" aria-label="Baskery" data-i18n-aria="homeLabel"><span class="logo-mask pop"></span></a>
+      <nav class="head-nav" aria-label="Sections" data-i18n-aria="sectionsLabel">
+        <a href="#menu" data-i18n="navMenu">Menu</a>
+        <a href="#boxes" data-i18n="navBoxes">Boxes</a>
+        <a href="#events" data-i18n="navEvents">Events</a>
+        <a href="#faq" data-i18n="navFaq">FAQ</a>
+      </nav>
+      <span class="sp"></span>
+      <button type="button" class="lang-btn" id="langBtn" lang="ar">عربي</button>
+      <a class="icon-btn" href="#cart" id="cartBtn" aria-label="Cart">
+        <svg viewBox="0 0 24 24" width="24" height="24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M5 8h14l-1 12H6L5 8z"/><path d="M9 8V6a3 3 0 0 1 6 0v2"/></svg>
+        <span class="count" id="cartCount" hidden>0</span>
+      </a>
+    </div>
+  </header>
+
+  <div id="home">
+    <section class="hero doodle drift" id="top">
+      <div class="wrap hero-in">
+        <div class="hero-copy">
+          <h1 data-i18n="heroTitle">Baked to make you smile</h1>
+          <p class="hero-sub" data-i18n="heroSub">Fresh cookies and brownies, baked for your order. Pick what you like and send the order on WhatsApp.</p>
+          <div class="hero-actions">
+            <a class="btn btn-primary" href="#menu" data-i18n="orderNow">Order now</a>
+            <a class="btn btn-ghost" href="https://wa.me/201154948726" target="_blank" rel="noopener" data-wa="helloMsg">
+              <svg class="wa-ico" viewBox="0 0 24 24" width="20" height="20" aria-hidden="true"><use href="#i-wa"/></svg><span data-i18n="chatUs">Chat on WhatsApp</span>
+            </a>
+          </div>
+        </div>
+        <img class="hero-img" src="/assets/img/hero-cookie.webp" width="560" height="560" alt="A Baskery cookie broken in half with melted caramel inside" data-i18n-alt="heroAlt" fetchpriority="high">
+      </div>
+    </section>
+    <div class="scallop" aria-hidden="true"></div>
+
+    <div class="wrap">
+      <p class="ahead">
+        <svg viewBox="0 0 24 24" width="22" height="22" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" aria-hidden="true"><circle cx="12" cy="12" r="9"/><path d="M12 7v5l3 2"/></svg>
+        <span><b data-i18n="aheadTitle">Order a day ahead, so it's baked fresh for you.</b> <span data-i18n="aheadText">Items marked "In stock today" can come today.</span></span>
+      </p>
+    </div>
+
+    <section class="menu-sec" id="menu" aria-labelledby="menuTitle">
+      <div class="wrap">
+        <div class="sec-head">
+          <h2 id="menuTitle" data-i18n="menuTitle">Menu</h2>
+          <p class="muted" data-i18n="menuSub">Prices in EGP. Every cookie comes in white, milk or dark chocolate.</p>
+        </div>
+      </div>
+      <div class="chips-bar"><div class="wrap"><div class="chips" id="menuChips" role="group" aria-label="Categories" data-i18n-aria="categories"></div></div></div>
+      <div class="wrap" id="menuGroups" aria-live="polite">
+        <p class="loading" data-i18n="loading">Loading the menu…</p>
+      </div>
+    </section>
+
+    <section class="wrap deal-wrap" id="boxes">
+      <div class="deal doodle">
+        <span class="badge" data-i18n="dealBadge">Box deal</span>
+        <h2 data-i18n="dealTitle">Boxes cost less than singles</h2>
+        <p data-i18n="dealText">Boxes of 4, 6 or 12. Save up to 60 EGP on a box of 12, for cookies and brownies.</p>
+        <div class="deal-actions">
+          <button type="button" class="btn btn-cocoa" data-open="cookie-box" data-i18n="dealCookie">Build a cookie box</button>
+          <button type="button" class="btn btn-ghost" data-open="brownie-box" data-i18n="dealBrownie">Brownie box</button>
+        </div>
+      </div>
+    </section>
+
+    <section class="wrap sec" id="how" aria-labelledby="howTitle">
+      <h2 id="howTitle" data-i18n="howTitle">How to order</h2>
+      <ol class="steps">
+        <li><b data-i18n="how1">Pick your cookies or brownies</b><span data-i18n="how1t">Choose the size, the chocolate and how many.</span></li>
+        <li><b data-i18n="how2">Add your details</b><span data-i18n="how2t">Name, phone, address, and the day that suits you.</span></li>
+        <li><b data-i18n="how3">Send it on WhatsApp</b><span data-i18n="how3t">Your order opens in WhatsApp, ready to send. We reply to confirm the delivery fee and time.</span></li>
+      </ol>
+    </section>
+
+    <section class="wrap sec" id="events" aria-labelledby="eventsTitle">
+      <div class="events">
+        <img src="/assets/img/events.webp" width="960" height="540" loading="lazy" alt="A Baskery Halloween table with ghost cookies, brownies and wrapped cookies" data-i18n-alt="eventsAlt">
+        <div class="events-txt">
+          <h2 id="eventsTitle" data-i18n="eventsTitle">Parties &amp; events</h2>
+          <p data-i18n="eventsText">Custom cookie and brownie trays for birthdays, offices and holidays, like our Halloween table.</p>
+          <a class="btn btn-wa" href="https://wa.me/201154948726" target="_blank" rel="noopener" data-wa="eventMsg">
+            <svg viewBox="0 0 24 24" width="22" height="22" aria-hidden="true"><use href="#i-wa"/></svg><span data-i18n="askUs">Ask us on WhatsApp</span>
+          </a>
+        </div>
+      </div>
+    </section>
+
+    <section class="wrap sec story" id="story" aria-labelledby="storyTitle">
+      <svg class="wink" viewBox="0 0 64 44" width="96" height="66" fill="none" stroke="currentColor" stroke-width="5" stroke-linecap="round" aria-hidden="true"><path d="M20 8v7"/><path d="M38 13q6-7 12 0"/><path d="M12 25q20 20 40 0"/></svg>
+      <div>
+        <h2 id="storyTitle" data-i18n="storyTitle">Freshly made with love</h2>
+        <p data-i18n="storyText">We bake in small batches, so every cookie is soft, fresh and made for your order. That's why we ask you to order a day ahead.</p>
+      </div>
+    </section>
+
+    <section class="wrap sec" id="faq" aria-labelledby="faqTitle">
+      <h2 id="faqTitle" data-i18n="faqTitle">Questions</h2>
+      <div class="faq">
+        <details><summary data-i18n="q1">How far ahead should I order?</summary><p data-i18n="a1">At least a day ahead, so we can bake it fresh for you. If something is marked "In stock today", you can order it for today.</p></details>
+        <details><summary data-i18n="q2">How much is delivery?</summary><p data-i18n="a2">It depends on your area. We confirm the delivery fee on WhatsApp before we bake.</p></details>
+        <details><summary data-i18n="q3">How do I pay?</summary><p data-i18n="a3">You choose how to pay when you order, and we confirm it on WhatsApp.</p></details>
+        <details><summary data-i18n="q4">Can I choose the chocolate?</summary><p data-i18n="a4">Yes. Every cookie and cookie box comes in white, milk or dark chocolate.</p></details>
+        <details><summary data-i18n="q5">Do you take custom orders?</summary><p data-i18n="a5">Yes, for parties, offices and holidays. Send us the date and the quantity on WhatsApp.</p></details>
+      </div>
+    </section>
+  </div>
+
+  <main id="flow" class="flow" hidden></main>
+
+  <footer class="site-foot">
+    <div class="wrap foot-in">
+      <span class="logo-mask foot-logo" role="img" aria-label="Baskery"></span>
+      <p class="foot-tag" data-i18n="heroTitle">Baked to make you smile</p>
+      <p><span data-i18n="footOrders">Orders on WhatsApp:</span> <a href="https://wa.me/201154948726" target="_blank" rel="noopener" dir="ltr" id="footPhone">0115 494 8726</a></p>
+      <p data-i18n="aheadTitle">Order a day ahead, so it's baked fresh for you.</p>
+      <p class="foot-links" id="footSocial" hidden></p>
+      <p class="foot-copy">© <span id="year">2026</span> Baskery</p>
+    </div>
+  </footer>
+
+  <div class="bar-wrap" id="bar" hidden></div>
+  <div class="sheet-wrap" id="sheet" hidden></div>
+  <div class="toast" id="toast" role="status" aria-live="polite" hidden></div>
+
+  <noscript>
+    <p class="noscript">This site needs JavaScript to take orders. You can also order directly on WhatsApp: <a href="https://wa.me/201154948726">0115 494 8726</a>.</p>
+  </noscript>
+
+  <svg width="0" height="0" style="position:absolute" aria-hidden="true">
+    <symbol id="i-wa" viewBox="0 0 24 24"><path fill="currentColor" d="M12 2.5a9.5 9.5 0 0 0-8.2 14.3L2.5 21.5l4.8-1.3A9.5 9.5 0 1 0 12 2.5zm0 17.2c-1.5 0-2.9-.4-4.1-1.1l-.3-.2-2.8.8.8-2.7-.2-.3A7.7 7.7 0 1 1 12 19.7z"/><path fill="currentColor" d="M16.3 14.1c-.2-.1-1.4-.7-1.6-.8-.2-.1-.4-.1-.5.1l-.7.9c-.1.2-.3.2-.5.1a6.3 6.3 0 0 1-3.1-2.7c-.2-.4.2-.4.7-1.3.1-.2 0-.3 0-.4l-.7-1.7c-.2-.5-.4-.4-.5-.4h-.5a.9.9 0 0 0-.7.3 2.8 2.8 0 0 0-.9 2.1c0 1.2.9 2.4 1 2.6.1.2 1.8 2.7 4.3 3.8 1.6.7 2.2.8 3 .6.5-.1 1.4-.6 1.6-1.1.2-.6.2-1 .1-1.1l-.5-.3z"/></symbol>
+  </svg>
+
+  <script src="/assets/js/app.js" defer></script>
+</body>
+</html>
